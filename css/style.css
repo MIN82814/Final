@@ -109,6 +109,10 @@ header {
   .fs-6 {
     font-size: 52px;
   }
+
+  .header-title {
+    margin-bottom: 12px;
+  }
 }
 
 /*banner區塊*/
