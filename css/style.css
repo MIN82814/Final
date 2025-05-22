@@ -299,6 +299,11 @@ footer {
   height: 44px;
 }
 
+.social img {
+  min-width: 44px;
+  height: auto;
+}
+
 .social li {
   transition: transform 0.3s ease;
 }
