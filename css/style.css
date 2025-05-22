@@ -219,11 +219,12 @@ main {
   color: #4B4B4B;
   white-space: nowrap;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .blog-read a:hover {
   background-color: #000000;
-  border: none;
+  border: 1px solid transparent;
   color: white;
 }
 
