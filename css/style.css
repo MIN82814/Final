@@ -300,8 +300,9 @@ footer {
 }
 
 .social img {
-  min-width: 44px;
+  width: 44px;
   height: auto;
+  flex-shrink: 0;
 }
 
 .social li {
