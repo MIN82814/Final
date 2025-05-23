@@ -131,12 +131,7 @@ main {
     transform: scale(1.5);
 }
 
-.page-active a {
-    font-weight: bold;
-    transform: scale(1.2);
-    color: #0027d5;
-    background: #d6e6ff;
-}
+
 
 /*footer*/
 footer {
