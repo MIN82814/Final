@@ -1,3 +1,4 @@
+/*自我介紹*/
 .about {
     display: flex;
     justify-content: end;
@@ -19,23 +20,37 @@
     gap: 16px;
 }
 
-/**/
+@media screen and (max-width: 768px) {
+    .about {
+        display: flex;
+        justify-content: center;
+        margin: 0 12px;
+    }
+
+    .about__desc {
+        margin: 0;
+        width: 351px;
+        padding: 40px 24px;
+    }
+}
+
+/*服務內容*/
 
 .service {
     max-width: 1296px;
     margin: 80px 312px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px
 }
 
-.service .title {
-    margin-bottom: 32px;
-}
 
 .service_content {
     max-width: 1076px;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    margin-bottom: 64px;
+
 }
 
 .service_content_vector {
@@ -52,6 +67,7 @@
     background: #FFFFFF;
     width: 480px;
     padding: 24px;
+    text-align: justify;
 }
 
 .service_content:not(.row-r) .service_content_text {
@@ -69,4 +85,75 @@
 .service_content_text {
     position: relative;
     z-index: 1;
+}
+
+.cta {
+    max-width: 1296px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 32px auto;
+    align-items: center;
+    gap: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .service {
+        max-width: 100%;
+        margin: 0 12px;
+        gap: 32px
+    }
+
+    .service_content {
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+
+    .service .index-title {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .service_content_text {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .service_content:not(.row-r) .service_content_text {
+        margin-left: 0px;
+    }
+
+    .service_content.row-r .service_content_text {
+        margin-right: -0px;
+    }
+
+    .service_content.row-r {
+        flex-direction: column;
+    }
+
+    .cta {
+        max-width: 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin: 32px 12px;
+    }
+}
+
+/*部落格*/
+.index-blog {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 80px 312px;
+}
+
+@media screen and (max-width: 768px) {
+    .index-blog .blog {
+        padding: 0;
+    }
+
+    .index-blog {
+        padding: 65px 12px;
+    }
+
 }
