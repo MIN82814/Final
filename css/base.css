@@ -11,6 +11,7 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
+    color: black;
 }
 
 .blue {
@@ -21,8 +22,12 @@ a {
     color: black;
 }
 
-.fs-2 {
+.fs-1 {
     font-size: 16px;
+}
+
+.fs-2 {
+    font-size: 20px;
 }
 
 .fs-3 {
@@ -54,12 +59,15 @@ a {
 }
 
 .index-title {
+    font-size: 64px;
     margin-bottom: 24px;
+    color: black;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 768px) {
     .index-title {
         font-size: 48px;
-        margin-bottom: 24px;
+
     }
 }
